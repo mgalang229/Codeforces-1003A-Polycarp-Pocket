@@ -15,9 +15,7 @@ void decode() {
 	}
 	int ans = 0;
 	for(int i = 1; i <= 100; ++i) {
-		if(ans < a[i]) {
-			ans = a[i];
-		}
+		ans = max(ans, a[i]);
 	}
 	cout << ans << "\n";
 }
